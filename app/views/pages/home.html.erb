@@ -25,7 +25,7 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Travel Album</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -55,11 +55,69 @@
           <h2>All images</h2>
           <div class="row">
             <div class="col-md-3">
-              <div class="photo photo-type-line"></div>
+              <div class="photo photo-type-line">
+                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
+<!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
+                  <div class="photo-info">
+                    <div class="headline">Lorem ipsum dolor sit amet</div>
+                    <div class="line"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis totam vel tempore, ex inventore?</div>
+                  </div>
+                  <div class="mask"></div>
+<!--                 </div> -->
+                </a>
+
+                <div class="photo-img"><%= image_tag "Cocktail1.jpg" %></div>
+              </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <div class="photo photo-type-line">
+                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
+<!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
+                  <div class="photo-info">
+                    <div class="headline">Lorem ipsum dolor sit amet</div>
+                    <div class="line"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis totam vel tempore, ex inventore?</div>
+                  </div>
+                  <div class="mask"></div>
+<!--                 </div> -->
+                </a>
+
+                <div class="photo-img"><%= image_tag "Cocktail1.jpg" %></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="photo photo-type-line">
+                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
+<!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
+                  <div class="photo-info">
+                    <div class="headline">Lorem ipsum dolor sit amet</div>
+                    <div class="line"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis totam vel tempore, ex inventore?</div>
+                  </div>
+                  <div class="mask"></div>
+<!--                 </div> -->
+                </a>
+
+                <div class="photo-img"><%= image_tag "Cocktail1.jpg" %></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="photo photo-type-line">
+                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
+<!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
+                  <div class="photo-info">
+                    <div class="headline">Lorem ipsum dolor sit amet</div>
+                    <div class="line"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis totam vel tempore, ex inventore?</div>
+                  </div>
+                  <div class="mask"></div>
+<!--                 </div> -->
+                </a>
+
+                <div class="photo-img"><%= image_tag "Cocktail1.jpg" %></div>
+              </div>
+            </div>
           </div>
         </div>
       </div><!-- /.container -->
