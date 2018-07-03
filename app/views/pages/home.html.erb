@@ -56,7 +56,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="photo photo-type-line">
-                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
+                <a href="images/Cocktail1.jpg" class="photo-hover" data-lightbox="my-images" data-tile="Lorem ipsum">
 <!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
                   <div class="photo-info">
                     <div class="headline">Lorem ipsum dolor sit amet</div>
@@ -72,7 +72,23 @@
             </div>
             <div class="col-md-3">
               <div class="photo photo-type-line">
-                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
+                <a href="../images/Cocktail2.jpg" class="photo-hover" data-lightbox="my-images" data-tile="Lorem ipsum">
+<!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
+                  <div class="photo-info">
+                    <div class="headline">Lorem ipsum dolor sit amet</div>
+                    <div class="line"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis totam vel tempore, ex inventore?</div>
+                  </div>
+                  <div class="mask"></div>
+<!--                 </div> -->
+                </a>
+
+                <div class="photo-img"><%= image_tag "Cocktail2.jpg" %></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="photo photo-type-line">
+               <a href="/./images/Cocktail1.jpg" class="photo-hover" data-lightbox="my-images" data-tile="Lorem ipsum">
 <!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
                   <div class="photo-info">
                     <div class="headline">Lorem ipsum dolor sit amet</div>
@@ -88,7 +104,7 @@
             </div>
             <div class="col-md-3">
               <div class="photo photo-type-line">
-                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
+                <a href= '<%= image_tag "Cocktail1.jpg" %>'class="photo-hover" data-lightbox="my-images" data-tile="Lorem ipsum">
 <!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
                   <div class="photo-info">
                     <div class="headline">Lorem ipsum dolor sit amet</div>
@@ -102,22 +118,10 @@
                 <div class="photo-img"><%= image_tag "Cocktail1.jpg" %></div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="photo photo-type-line">
-                <a href="url('<%= image_path 'Cocktail1.jpg' %>')" class="photo-hover">
-<!--            <div class="photo-hover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url('<%= image_path 'Cocktail1.jpg' %>')"> -->
-                  <div class="photo-info">
-                    <div class="headline">Lorem ipsum dolor sit amet</div>
-                    <div class="line"></div>
-                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quis totam vel tempore, ex inventore?</div>
-                  </div>
-                  <div class="mask"></div>
-<!--                 </div> -->
-                </a>
-
-                <div class="photo-img"><%= image_tag "Cocktail1.jpg" %></div>
-              </div>
-            </div>
+          </div>
+          <div class="row">
+            <br>
+            <br>
           </div>
         </div>
       </div><!-- /.container -->
