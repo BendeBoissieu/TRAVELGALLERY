@@ -1,2 +1,18 @@
-<h1>Categories#new</h1>
-<p>Find me in app/views/categories/new.html.erb</p>
+<h2>Add a new Catagory</h2>
+
+<div class="container-form">
+  <%= form_for @category do |f| %>
+    <% if @category.errors.any? %>
+    <% @category.errors.full_messages.each do |msg| %>
+      <div class="alert alert-danger"><%= msg %></div>
+      <% end %>
+    <% end %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text.field :name, class: 'control-form' %>
+    </div>
+    <br>
+    <%= f.submit "Submit", class:'btn btn-primary' %>
+    <%= link_to "Cancel", categories_path, class: 'btn btn-default' %>
+  <% end %>
+</div>
