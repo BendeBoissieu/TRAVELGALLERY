@@ -1,2 +1,49 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+    <section>
+      <div class="container">
+        <% if flash[:notice] %>
+          <div class="alert alert-success"><%= flash[:notice] %></div>
+          <% end %>
+          <% if flash[:alert] %>
+          <div class="alert alert-danger"><%= flash[:alert] %></div>
+          <% end %>
+        <div id="gallery">
+          <h2><%= @category.name %></h2>
+         <% if @images.exists? %>
+            <% @images.each_slice(4) do |image| %>
+            <div class="row">
+              <% image.each do |image| %>
+
+                <div class="col-md-3">
+                  <div class="photo photo-type-line">
+                    <a href="<%= image.image_url() %>" class="photo-hover" data-lightbox="my-images" data-title="<%= image.image_title %>">
+
+                      <div class="photo-info">
+                        <div class="headline"><%= image.image_title %></div>
+                        <div class="line"></div>
+                        <div class="desc"><%= image.image_description %></div>
+                      </div>
+                      <div class="mask"></div>
+    <!--                 </div> -->
+                    </a>
+
+                    <div class="photo-img"><%= image_tag image.image_url(:thumb) %></div>
+                  </div>
+                </div>
+
+              <% end %>
+            </div>
+            <% end %>
+         <% else %>
+         <p>There is no images</p>
+         <% end %>
+
+
+
+
+          <div class="row">
+            <br>
+            <br>
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </section>
