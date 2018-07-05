@@ -18,19 +18,20 @@
     <% end %>
   </div>
 </div>
-
-<h3 class="page-header">Image in <%= @category.name %></h3>
-<div id="edit images">
-  <% if @images.exists? %>
-    <% @images.each_slice(6) do |image| %>
-      <div class="row">
-        <% image.each do |image| %>
-        <div class="col-md-2">
-          <%= image_tag image.image_url(:thumb)  %>
-          <center><%= link_to "Delete", image_path(image), class:'delete', method: :delete, data: {confirm: "Are you sure?"}  %></center>
+<div class="container">
+  <h3 class="page-header">Image in <%= @category.name %></h3>
+  <div id="edit_images">
+    <% if @images.exists? %>
+      <% @images.each_slice(6) do |image| %>
+        <div class="row">
+          <% image.each do |image| %>
+          <div class="col-md-2">
+            <%= image_tag image.image_url(:thumb)  %>
+            <center><%= link_to "Delete", image_path(image), class:'delete', method: :delete, data: {confirm: "Are you sure?"}  %></center>
+          </div>
+          <% end %>
         </div>
-        <% end %>
-      </div>
-    <% end %>
+      <% end %>
 
-  <% end %>
+    <% end %>
+</div>
