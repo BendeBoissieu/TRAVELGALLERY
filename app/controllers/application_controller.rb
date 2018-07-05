@@ -3,6 +3,7 @@ before_action :getCategoryNav
 protect_from_forgery with: :exception
 
 
+
   private
 
   def getCategoryNav
