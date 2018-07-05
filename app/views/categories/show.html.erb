@@ -7,7 +7,7 @@
           <div class="alert alert-danger"><%= flash[:alert] %></div>
           <% end %>
         <div id="gallery">
-          <h2><%= @category.name %></h2>
+          <h2><%= @category.name %><small class="pull-right"><%= link_to "Edit", edit_category_path %></small></%></h2>
          <% if @images.exists? %>
             <% @images.each_slice(4) do |image| %>
             <div class="row">
