@@ -18,6 +18,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'rmagick'
 gem 'carrierwave'
+gem 'cloudinary'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
