@@ -51,7 +51,7 @@ h1, h2{
 .photo-hover .mask,
 .photo-img,
 .photo-info{
-  width: 300px;
+  width: 293px;
   height: 270px;
 }
 
@@ -61,6 +61,7 @@ h1, h2{
   position: absolute;
   top: 0;
   left: 0;
+
 }
 
 .photo-type-line .photo-hover{
@@ -81,6 +82,7 @@ h1, h2{
   display: table-cell;
   vertical-align: middle;
   position: relative;
+  background-color: rgba(86, 3, 95, 0.6);
 }
 
 .photo-type-line .photo-info .headline{
@@ -109,6 +111,7 @@ h1, h2{
   width: 40%;
 
 
+
 }
 
 .photo-type-line .photo-hover:hover{
@@ -122,12 +125,5 @@ h1, h2{
 
 }
 
-.photo-img:hover{
-  z-index: 0;
-    filter: none;
-      -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.01);
-
-}
 
 
