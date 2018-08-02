@@ -4,6 +4,7 @@ class Image < ApplicationRecord
   mount_uploader :image, ImageUploader
 
   before_save :update_image_attributes
+  validates :image, presence: true
 
   private
 
@@ -13,4 +14,8 @@ class Image < ApplicationRecord
         self.image_file_size = image.file.size
       end
     end
+
+
+
+
 end
