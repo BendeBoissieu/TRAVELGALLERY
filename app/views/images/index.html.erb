@@ -21,6 +21,7 @@
                         <div class="headline"><%= image.image_title %></div>
                         <div class="line"></div>
                         <div class="desc"><%= image.image_description %></div>
+                        <div class="line"> <%= link_to " Delete", @event, :method => "delete", class: 'btn btn-warning'%> </div>  
                       </div>
                       <div class="mask"></div>
     <!--                 </div> -->
