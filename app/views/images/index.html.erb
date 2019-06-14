@@ -21,7 +21,9 @@
                         <div class="headline"><%= image.image_title %></div>
                         <div class="line"></div>
                         <div class="desc"><%= image.image_description %></div>
-                        <div class="line"> <%= link_to " Delete", @event, :method => "delete", class: 'btn btn-warning'%> </div>  
+                        <div class="line"> <%= link_to " Delete", @image, method: :delete do%> <i class="fa fa-times" style="color:#cf3a3a; font-size: 22px;" aria-hidden="true"></i>
+                        </div>    
+                        
                       </div>
                       <div class="mask"></div>
     <!--                 </div> -->
