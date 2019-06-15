@@ -14,6 +14,7 @@ class ImagesController < ApplicationController
   end
 
   def destroy
+    verification_password = "ben"
     @image = Image.find(params[:id])
     @image.destroy
     flash[:notice] = "Image removed"
