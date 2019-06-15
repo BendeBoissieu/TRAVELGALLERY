@@ -26,6 +26,11 @@ class ImagesController < ApplicationController
     @categories = Category.all
   end
 
+  def index_delete
+    @images = Image.all
+    @categories = Category.all
+  end
+
    private
 
   def image_params

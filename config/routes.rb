@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'images/create'
   get 'images/destroy'
   get 'images/index'
+  get 'images/index_delete' => 'images#index_delete'
   get 'categories/new'
   get 'categories/create'
   get 'categories/edit'
