@@ -6,7 +6,7 @@
           <% if flash[:alert] %>
           <div class="alert alert-danger"><%= flash[:alert] %></div>
           <% end %>
-        <div id="gallery">
+        <div id="gallery-delete">
           <h2>All images</h2>
          <% if @images.exists? %>
             <% @images.each_slice(4) do |image| %>
@@ -14,17 +14,13 @@
               <% image.each do |image| %>
 
                 <div class="col-md-3">
-                  <div class="photo photo-type-line">
-                    <a href="<%= image.image_url() %>" class="photo-hover" data-lightbox="my-images" data-title="<%= image.image_title %>">
-
-                      <div class="photo-info">
-                        <div class="headline"><%= image.image_title %></div>
-                        <div class="line"></div>
-                        <div class="desc"><%= image.image_description %></div>
-                      </div>
-                      <div class="mask"></div>
-    <!--                 </div> -->
-                    </a>
+                  <div class="delete_button">
+                    <%= link_to "Delete", @image, method: :delete do%> delete <% end %>
+                    <%= link_to "show", image_path(image) %>
+                  </div>
+                  <div class="photo photo-type-line-delete">
+                    <div class="line"> <%= link_to " Delete", @image, method: :delete do%> <i class="fa fa-times" style="color:#cf3a3a; font-size: 22px;" aria-hidden="true"></i><% end %>
+                        </div>
 
                     <div class="photo-img"><%= image_tag image.image_url(:thumb) %></div>
                   </div>
