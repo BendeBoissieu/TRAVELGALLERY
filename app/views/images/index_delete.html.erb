@@ -15,14 +15,12 @@
 
                 <div class="col-md-3">
                   <div class="delete_button">
-                    <%= link_to "Delete", @image, method: :delete do%> delete <% end %>
-                    <%= link_to "show", image_path(image) %>
+                    <%= link_to 'Delete', image_path(image),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
                   </div>
                   <div class="photo photo-type-line-delete">
-                    <div class="line"> <%= link_to " Delete", @image, method: :delete do%> <i class="fa fa-times" style="color:#cf3a3a; font-size: 22px;" aria-hidden="true"></i><% end %>
-                        </div>
-
-                    <div class="photo-img"><%= image_tag image.image_url(:thumb) %></div>
+                    <%= image_tag image.image_url(:thumb) %>
                   </div>
                 </div>
 
