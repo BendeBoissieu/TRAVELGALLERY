@@ -1,5 +1,5 @@
 meta_product_name: "My Travel Gallery"
 meta_title: "Selection of pictures from different countries"
 meta_description: "Website and Selection of pictures from different countries from Benjamin de Boissieu"
-meta_image: "travelgallery_home.jpg"                       # should exist in `app/assets/images/`
+meta_image: "travelgallery_home.png"                       # should exist in `app/assets/images/`
 twitter_account: "@benjamin_de_boissieu"   # required for Twitter Cards
